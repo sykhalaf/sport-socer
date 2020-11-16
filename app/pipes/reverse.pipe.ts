@@ -6,6 +6,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class ReversePipe implements PipeTransform {
 
   transform(ch:any): any {
+    // initi var
     let res = '';
     for (let i = 0; i < ch.length; i++) {
       res += ch[i] + res; 
